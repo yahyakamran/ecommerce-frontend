@@ -6,6 +6,7 @@ import Category from "./components/Category/Category";
 import SingleProduct from "./components/SingleProduct/SingleProduct";
 import Newsletter from "./components/Footer/Newsletter/Newsletter";
 import AppContext from "./utils/context";
+import Payment from "./components/payment/Payment.js";
 
 function App() {
     return(
@@ -16,6 +17,7 @@ function App() {
                     <Route path="/" element={<Home/>}/>
                     <Route path="/category/:id" element={<Category/>}/>
                     <Route path="/product/:id" element={<SingleProduct/>}/>
+                    <Route path='/payment' element={<Payment/>}/>
                 </Routes>
                 <Newsletter/>
                 <Footer/>
