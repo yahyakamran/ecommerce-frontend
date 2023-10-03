@@ -98,8 +98,7 @@ const AppContext = ({ children }) => {
         favouriteItems,
         handleAddToFavourite,
         handleRemoveFromFavourite,
-      }}
-    >
+      }}>
       {children}
     </Context.Provider>
   );
